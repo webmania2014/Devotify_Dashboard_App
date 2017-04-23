@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AddadminComponent } from './component/addadmin/addadmin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { HeaderComponent } from './component/header/header.component';
+import { MainviewComponent } from './component/mainview/mainview.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HeaderComponent } from './component/header/header.component';
     HeaderComponent,
     DashboardComponent,
     AddadminComponent,
+    MainviewComponent,
   ],
   imports: [
     BrowserModule,
