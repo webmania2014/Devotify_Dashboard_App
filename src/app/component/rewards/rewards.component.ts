@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rewards',
+  selector: 'devotify-rewards',
   templateUrl: './rewards.component.html',
   styleUrls: ['./rewards.component.css']
 })
