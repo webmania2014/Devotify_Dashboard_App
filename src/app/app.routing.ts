@@ -17,7 +17,7 @@ const appRoutes: Routes = [
     { path: 'offers', component: OffersComponent },
     { path: 'addadmin', component: AddadminComponent },
     { path: 'roles', component: RolesComponent },
-    { path: '**', component: PagenotfoundComponent }
+    { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

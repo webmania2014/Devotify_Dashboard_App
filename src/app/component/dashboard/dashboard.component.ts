@@ -22,6 +22,12 @@ export class DashboardComponent implements OnInit {
       yAxis: { title: { enabled: false } },
       series: [{
           name: 'New Users',
+          color: '#41b77a',
+          marker: {
+            fillColor: '#FFFFFF',
+            lineWidth: 2,
+            lineColor: null
+          },
           data: [
             ['1 April 2017', 29],
             ['2 April 2017', 71],

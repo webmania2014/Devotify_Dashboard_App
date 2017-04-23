@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
 import { ChartModule } from 'angular2-highcharts';
+import { HighchartsStatic } from 'angular2-highcharts/dist/HighchartsService';
 
 import { AppComponent } from './app.component';
 import { AddadminComponent } from './component/addadmin/addadmin.component';
@@ -17,6 +18,8 @@ import { RewardsComponent } from './component/rewards/rewards.component';
 import { RolesComponent } from './component/roles/roles.component';
 import { SidebarComponent } from './component/sidebar/sidebar.component';
 import { UserComponent } from './component/user/user.component';
+
+declare var require: any;
 
 @NgModule({
   declarations: [
@@ -39,7 +42,12 @@ import { UserComponent } from './component/user/user.component';
     routing,
     ChartModule.forRoot(require('highcharts'))
   ],
-  providers: [],
+  providers: [
+/*    {
+      provide: HighchartsStatic,
+      useFactory: highchartsFactory
+    }*/
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
