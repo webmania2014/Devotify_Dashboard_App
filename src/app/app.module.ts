@@ -9,6 +9,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { HeaderComponent } from './component/header/header.component';
 import { MainviewComponent } from './component/mainview/mainview.component';
 import { OffersComponent } from './component/offers/offers.component';
+import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
+import { RewardsComponent } from './component/rewards/rewards.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { OffersComponent } from './component/offers/offers.component';
     AddadminComponent,
     MainviewComponent,
     OffersComponent,
+    PagenotfoundComponent,
+    RewardsComponent,
   ],
   imports: [
     BrowserModule,
