@@ -19,24 +19,21 @@ export class DashboardComponent implements OnInit {
       credits: { enabled: false },
       title : { text : '' },
       legend: { enabled: false },
-      xAxis: {
-        categories: [
-          '1 April 2017',
-          '2 April 2017',
-          '3 April 2017',
-          '4 April 2017',
-          '5 April 2017',
-          '6 April 2017',
-          '7 April 2017',
-          '8 April 2017',
-          '9 April 2017',
-          '10 April 2017'
-        ]
-      },
       yAxis: { title: { enabled: false } },
       series: [{
           name: 'New Users',
-          data: [29, 71, 106, 129, 29, 71, 106, 129, 29, 71]
+          data: [
+            ['1 April 2017', 29],
+            ['2 April 2017', 71],
+            ['3 April 2017', 106],
+            ['4 April 2017', 129],
+            ['5 April 2017', 29],
+            ['6 April 2017', 71],
+            ['7 April 2017', 106],
+            ['8 April 2017', 129],
+            ['9 April 2017', 29],
+            ['10 April 2017', 71]
+          ]
       }]
     };
   }
