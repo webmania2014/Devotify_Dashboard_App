@@ -1,0 +1,35 @@
+<div class="sidebar">
+  <ul class="sidebar-menu">
+    <li [routerLinkActive]="['active']">
+      <a routerLink="/dashboard"><i class="glyphicon glyphicon-signal"></i>Dashboard</a>
+    </li>
+    <li [routerLinkActive]="['active']">
+      <a routerLink="/user">
+        <i class="glyphicon glyphicon-user"></i>Users
+        <span class="sidebar-badge">1255</span>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']">
+      <a routerLink="/rewards">
+        <i class="glyphicon glyphicon-star"></i>Rewards
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']">
+      <a routerLink="/offers">
+        <i class="glyphicon glyphicon-dashboard"></i>Offers
+        <span class="sidebar-badge">45</span>
+      </a>
+    </li>
+  </ul>
+  <div class="admin-mng-menu">
+    <div class="title">App Admins</div>
+    <ul>
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/addadmin"><i class="glyphicon glyphicon-plus-sign"></i>Add Admin</a>
+      </li>
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/roles"><i class="glyphicon glyphicon-plus-sign"></i>Roles</a>
+      </li>
+    </ul>
+  </div>
+</div>

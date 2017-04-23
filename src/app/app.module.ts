@@ -12,6 +12,7 @@ import { OffersComponent } from './component/offers/offers.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { RewardsComponent } from './component/rewards/rewards.component';
 import { RolesComponent } from './component/roles/roles.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RolesComponent } from './component/roles/roles.component';
     PagenotfoundComponent,
     RewardsComponent,
     RolesComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
