@@ -13,6 +13,7 @@ import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.com
 import { RewardsComponent } from './component/rewards/rewards.component';
 import { RolesComponent } from './component/roles/roles.component';
 import { SidebarComponent } from './component/sidebar/sidebar.component';
+import { UserComponent } from './component/user/user.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SidebarComponent } from './component/sidebar/sidebar.component';
     RewardsComponent,
     RolesComponent,
     SidebarComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
