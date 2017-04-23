@@ -1,0 +1,39 @@
+.header-wrapper {
+  position: relative;
+  background: #16394d;
+  padding: 14px 20px;
+  color: white;
+}
+
+.header-wrapper .logo {
+  font-size: 18px;
+}
+
+.header-wrapper .logo img {
+  width: 29px;
+  height: 33px;
+}
+
+.header-wrapper .top-menu {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 10px 0;
+  font-size: 11px;
+}
+
+.header-wrapper .admin-role,
+.header-wrapper .dropdown-toggle {
+  float: left;
+}
+
+.header-wrapper .admin-role {
+  margin-right: 8px;
+}
+
+.header-wrapper .top-menu img {
+  border-radius: 50%;
+  border: 2px solid #41b77a;
+  width: 30px;
+  height: 30px;
+}

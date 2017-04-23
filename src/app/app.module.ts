@@ -4,14 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AddadminComponent } from './component/addadmin/addadmin/addadmin.component';
+import { AddadminComponent } from './component/addadmin/addadmin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { HeaderComponent } from './component/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    DashboardComponent,
     AddadminComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
