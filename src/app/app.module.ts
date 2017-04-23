@@ -11,6 +11,7 @@ import { MainviewComponent } from './component/mainview/mainview.component';
 import { OffersComponent } from './component/offers/offers.component';
 import { PagenotfoundComponent } from './component/pagenotfound/pagenotfound.component';
 import { RewardsComponent } from './component/rewards/rewards.component';
+import { RolesComponent } from './component/roles/roles.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { RewardsComponent } from './component/rewards/rewards.component';
     OffersComponent,
     PagenotfoundComponent,
     RewardsComponent,
+    RolesComponent,
   ],
   imports: [
     BrowserModule,
