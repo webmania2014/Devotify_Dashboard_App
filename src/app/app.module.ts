@@ -42,12 +42,7 @@ declare var require: any;
     routing,
     ChartModule.forRoot(require('highcharts'))
   ],
-  providers: [
-/*    {
-      provide: HighchartsStatic,
-      useFactory: highchartsFactory
-    }*/
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
