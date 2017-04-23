@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
+import { ChartModule } from 'angular2-highcharts';
+
 import { AppComponent } from './app.component';
 import { AddadminComponent } from './component/addadmin/addadmin.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
@@ -34,7 +36,8 @@ import { UserComponent } from './component/user/user.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    ChartModule.forRoot(require('highcharts'))
   ],
   providers: [],
   bootstrap: [AppComponent]
