@@ -1,0 +1,139 @@
+<div class="dashboard-header">
+  <div class="search-unit">
+    <select class="form-control">
+      <option *ngFor="let row of searchUserType" value="row.id">{{ row.type }}</option>
+    </select>
+  </div>
+  <div class="search-unit">
+    <input type="date" class="form-control" />
+  </div>
+  <a href="#" class="setting"><i class="glyphicon glyphicon-cog"></i></a>
+</div>
+<div class="dashboard-body">
+  <div class="panel margin-bottom chart-wrapper">
+    <div class="chart-header">
+      <div class="filter-item">
+        <div class="title">New Users</div>
+        <div class="value">12,555</div>
+      </div>
+      <div class="filter-item">
+        <div class="title">Redeemed Rewards</div>
+        <div class="value">482</div>
+      </div>
+      <div class="chart-date-range">
+        <ul class="clearfix">
+          <li><a href="#">Day</a></li>
+          <li><a href="#">Week</a></li>
+          <li class="active"><a href="#">Month</a></li>
+          <li><a href="#">Year</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart-body">
+      <chart [options]="options"></chart>
+    </div>
+  </div>
+  <div class="sati-wrapper">
+    <div class="top-users-wrapper">
+      <div class="panel">
+        <div class="title">Top Users</div>
+        <table class="table thead-thin">
+          <colgroup>
+            <col width="70%">
+            <col width="15%">
+            <col width="15%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>User Name</th>
+              <th class="text-center">Total Stars</th>
+              <th class="text-center">Rewards</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Michael Banks</td>
+              <td class="text-center"><b>9800</b></td>
+              <td class="text-center"><b>46</b></td>
+            </tr>
+            <tr>
+              <td>Eric Anderson</td>
+              <td class="text-center"><b>7678</b></td>
+              <td class="text-center"><b>41</b></td>
+            </tr>
+            <tr>
+              <td>Walter Atkinson</td>
+              <td class="text-center"><b>3631</b></td>
+              <td class="text-center"><b>21</b></td>
+            </tr>
+            <tr>
+              <td>Carrie Wahsington</td>
+              <td class="text-center"><b>1206</b></td>
+              <td class="text-center"><b>17</b></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="panel-link">See All Users</a>
+      </div>
+    </div>
+    <div class="admin-activity-wrapper">
+      <div class="panel">
+        <div class="title">Admin Activity</div>
+        <div class="">7 Admins</div>
+        <hr>
+        <div class="admin-list">
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#"><img src="assets/img/avatar.jpg" alt=""></a>
+          <a href="#" class="add-admin"><i class="glyphicon glyphicon-plus"></i></a>
+        </div>
+        <div class="admin-satis clearfix">
+          <div class="col-md-6">
+            <div class="title">Stars</div>
+            <div class="value">1768</div>
+          </div>
+          <div class="col-md-6">
+            <div class="title">Rewards</div>
+            <div class="value">78</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="current-rewards-wrapper">
+      <div class="panel">
+        <div class="title">Current Rewards</div>
+        <table class="table thead-thin">
+          <colgroup>
+            <col width="80%">
+            <col width="2%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Reward Name</th>
+              <th class="text-center">Stars Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st Level Reward</td>
+              <td class="text-center"><b>100</b></td>
+            </tr>
+            <tr>
+              <td>2nd Level Reward</td>
+              <td class="text-center"><b>200</b></td>
+            </tr>
+            <tr>
+              <td>3rd Level Reward</td>
+              <td class="text-center"><b>300</b></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="panel-link">Edit Rewards</a>
+      </div>
+    </div>
+  </div>
+</div>

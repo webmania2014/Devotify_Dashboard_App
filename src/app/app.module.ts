@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AddadminComponent } from './component/addadmin/addadmin/addadmin.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddadminComponent
+    AddadminComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
